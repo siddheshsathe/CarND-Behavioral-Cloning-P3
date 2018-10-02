@@ -2,6 +2,8 @@
 
 [model_architecture]: ./images/model.png "Model"
 [training_loss]: ./images/training_loss.png "Training Loss"
+
+---
 # Behavioral Cloning Project
 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
@@ -25,7 +27,7 @@ To meet specifications from [rubric points](https://review.udacity.com/#!/rubric
 * drive.py (script to drive the car. Modified for increasing thorttle)
 * model.h5 (a trained Keras model)
 * README.md (markdown file for explanation)
-* run1_full_track1.mp4 (a video recording of vehicle driving autonomously around the track for one full lap)
+* [run1_full_track1.mp4](https://www.youtube.com/watch?v=d9KjyGlr_iQ) (a video recording of vehicle driving autonomously around the track for one full lap)
 
 The Project
 ---
@@ -60,6 +62,7 @@ from model import nvidiaModel
 model = nvidiaModel()
 ```
 ### `main.py`
+
 This file is responsible for creating a data suitable to feed in to the network and train the network.
 <br>
 It is **assumed** here that, the training data is present to the relative path at `../behavioral_cloning_data/Track1/<multiple folder containing IMG and driving_log.csv>/`. 
@@ -67,7 +70,7 @@ It is **assumed** here that, the training data is present to the relative path a
 * Whole track1 in the default direction
 * Whole track1 in opposite direction so that car thinks it's totally a different track
 * Dirt road
-<br>
+
 A method named `loadData()` is used to traverse through the available directories and create an augumented data so that our training samples increase in count.
 <br>
 While collecting the image data, we're **flipping** the image virtically so that the number of sample count will double automatically.
@@ -86,6 +89,7 @@ The file works in below steps:
 <br>
 My model did pretty well and thus got below `loss vs epochs` graph.
 <br>
+
 ![training_loss]
 
 ### `drive.py`
@@ -116,9 +120,9 @@ The fourth argument, `run1_full_track1`, is the directory in which to save the i
 ```sh
 ls run1_full_track1
 
-[2018-01-10 16:10:23 IST]  12KiB 2018_01_10_21_10_23_424.jpg
-[2017-01-10 16:10:23 IST]  12KiB 2018_01_10_21_10_23_451.jpg
-[2017-01-10 16:10:23 IST]  12KiB 2018_01_10_21_10_23_477.jpg
+2018_01_10_21_10_23_424.jpg
+2018_01_10_21_10_23_451.jpg
+2018_01_10_21_10_23_477.jpg
 ...
 ```
 
