@@ -19,7 +19,7 @@ Overview
 This repository contains starting files for the Behavioral Cloning Project.
 In this project, I've used what I've learned about deep neural networks and convoltional neural networks. 
 Using this learning, a driver's driving behavior is cloned to drive the car in simulator autonomously.
-<br>I've trained validated and then tested the model with self generated training and validation set using Udacity SDC's provided simulator. The model was trained to predict the steering angle for autonomous car.
+<br>I've trained, validated and then tested the model with self generated training and validation set using Udacity SDC's provided simulator. The model was trained to predict the steering angle for autonomous car.
 
 To meet specifications from [rubric points](https://review.udacity.com/#!/rubrics/432/view), the project has below files: 
 * model.py (script used to create model)
@@ -84,7 +84,7 @@ The file works in below steps:
 2. Call `loadData()` with list of directories as an argument
 3. Create `X_train` and `y_train` where `X_train` is a training data and `y_train` is a label data; in our case, it's a steering angle.
 4. Call `nvidiaModel()` from `model.py` to get the nvidia model.
-5. Compile the model and train for desired number of epochs. (I did it for 10 epochs).
+5. Compile the model and train for desired number of epochs. (I did it for 30 epochs).
 6. Record the losses we obtained for every epoch and plot the graph to understand how well the model is doing.
 <br>
 My model did pretty well and thus got below `loss vs epochs` graph.
